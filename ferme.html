@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ferme</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="topbar"><div class="topbar-inner"><div class="logo">France Simulation</div><div class="nav" id="sessionNav"></div></div></div>
+<div class="layout">
+  <section class="hero">
+    <h1 id="farmTitle">Ferme</h1>
+    <p class="muted">Page de ferme avec changement de mot de passe et stocks complets.</p>
+  </section>
+  <section class="grid">
+    <div class="card span-4">
+      <h2>Changer le mot de passe</h2>
+      <div class="form-grid">
+        <div class="col-12"><input id="oldPwd" type="password" placeholder="Ancien mot de passe"></div>
+        <div class="col-12"><input id="newPwd" type="password" placeholder="Nouveau mot de passe"></div>
+        <div class="col-12"><input id="confirmPwd" type="password" placeholder="Confirmer le mot de passe"></div>
+        <div class="col-12"><button onclick="changePassword()">Enregistrer</button></div>
+      </div>
+    </div>
+    <div class="card span-8">
+      <h2>Stocks complets</h2>
+      <p class="muted">Les stocks ajoutés depuis le panel admin apparaissent ici automatiquement.</p>
+      <div id="stocksWrap"></div>
+    </div>
+  </section>
+</div>
+<script src="app.js"></script>
+</body></html>

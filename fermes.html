@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fermes</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="topbar"><div class="topbar-inner"><div class="logo">France Simulation</div><div class="nav" id="sessionNav"></div></div></div>
+<div class="layout">
+  <section class="hero">
+    <h1>Fermes</h1>
+    <p class="muted">Choisis une ferme ici. L’accueil ne contient plus les fermes.</p>
+  </section>
+  <section class="card">
+    <div id="farmsWrap" class="farms-grid"></div>
+  </section>
+  <section id="farmLoginBox" class="card hidden" style="margin-top:16px;">
+    <h2>Connexion ferme</h2>
+    <p class="muted">Ferme : <strong id="farmLoginLabel"></strong></p>
+    <div class="form-grid">
+      <div class="col-12"><input id="farmLoginName" type="hidden"><input id="farmLoginPassword" type="password" placeholder="Mot de passe"></div>
+      <div class="col-12"><button onclick="loginFarm()">Entrer dans la ferme</button></div>
+    </div>
+  </section>
+</div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,25 @@
+
+:root{--bg:#0f172a;--card:#1e293b;--card2:#24324b;--line:#334155;--text:#fff;--muted:#cbd5e1;--green:#22c55e;--blue:#38bdf8;--red:#ef4444}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#0f172a,#111827);color:var(--text)}
+.topbar{background:#0b1220;border-bottom:1px solid var(--line);position:sticky;top:0}
+.topbar-inner{max-width:1200px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-size:28px;font-weight:800}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a,.nav button{background:var(--card);border:1px solid var(--line);color:var(--text);padding:10px 14px;border-radius:12px;text-decoration:none;cursor:pointer;font-weight:700}
+.layout{max-width:1200px;margin:auto;padding:22px 20px 40px}
+.hero,.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.22)}
+.hero{margin-bottom:18px}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}
+.farms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.farm-card,.item{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:16px}
+button,.btn{background:var(--green);border:none;color:#fff;padding:11px 14px;border-radius:12px;font-weight:700;cursor:pointer}
+.btn-blue{background:var(--blue);color:#082f49}.btn-red{background:var(--red)}
+input,select,textarea{width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:#0b1220;color:#fff}
+.form-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.col-12{grid-column:span 12}.col-6{grid-column:span 6}.col-4{grid-column:span 4}.col-3{grid-column:span 3}
+.stock-row{display:flex;gap:10px;align-items:center;margin:8px 0;flex-wrap:wrap}.stock-row label{min-width:190px}
+.notice{background:#172554;border:1px solid #1d4ed8;padding:12px;border-radius:14px}
+@media (max-width:900px){.span-8,.span-6,.span-4,.col-12,.col-6,.col-4,.col-3{grid-column:span 12}}

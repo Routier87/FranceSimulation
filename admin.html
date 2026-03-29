@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Panel Admin</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="topbar"><div class="topbar-inner"><div class="logo">France Simulation</div><div class="nav" id="sessionNav"></div></div></div>
+<div class="layout">
+  <section class="hero">
+    <h1>Panel Admin</h1>
+    <div class="notice">Utilisateur : <strong>admin</strong> — Mot de passe : <strong>FranceSimulation25</strong><br>Utilisateur : <strong>Routier87</strong> — Mot de passe : <strong>200187</strong></div>
+  </section>
+  <section class="grid">
+    <div class="card span-6">
+      <h2>Ajouter un stock personnalisé</h2>
+      <p class="muted">Ajoute ici des choses qui ne sont pas dans la liste de base.</p>
+      <input id="newStockName" type="text" placeholder="Exemple : Olives">
+      <button onclick="addCustomStock()">Ajouter ce stock</button>
+    </div>
+    <div class="card span-6">
+      <h2>Liste des stocks</h2>
+      <div id="stockListAdmin"></div>
+    </div>
+  </section>
+</div>
+<script src="app.js"></script>
+</body></html>

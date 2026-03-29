@@ -1,0 +1,1 @@
+Ouvre index.html. Les fermes sont sur fermes.html. Mot de passe par défaut : 12345.
